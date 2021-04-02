@@ -1,0 +1,86 @@
+@use "../abstracts" as *;
+
+@mixin border-right-animation($delay) {
+  border-right: 4px solid $white;
+  animation: blink-cursor 0.5s ease-in 1;
+  animation-delay: #{$delay}ms;
+  animation-fill-mode: forwards;
+}
+
+main.index {
+  img {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+    width: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  height: 100vh;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 345px;
+
+  h1 {
+    font-size: 4rem;
+
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  button {
+    align-self: flex-end;
+
+    margin-right: 3.5rem;
+  }
+}
+
+#first-sentence {
+  @include border-right-animation(800);
+}
+
+#second-sentence {
+  @include border-right-animation(3000);
+}
+
+#designer {
+  align-self: flex-end;
+  margin-right: 3.5rem;
+  @include border-right-animation(4400);
+}
+
+@media (min-width: 720px) {
+  .introduction {
+    max-width: 370px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .introduction {
+    max-width: 400px;
+  }
+
+  main.index {
+    img {
+      display: block;
+    }
+  }
+}

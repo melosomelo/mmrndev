@@ -1,0 +1,73 @@
+@use "abstracts" as *;
+
+// reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50%;
+}
+
+// base styles
+body {
+  background: linear-gradient(137.41deg, #282828 0%, #090808 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.6rem;
+  color: $white;
+}
+
+.red-gradient-container {
+  background: linear-gradient(
+    287.06deg,
+    rgba(235, 33, 69, 0.12) 4.82%,
+    rgba(235, 33, 69, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+a,
+a:visited {
+  color: $white;
+  text-decoration: none;
+
+  font-size: 2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: $red;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+main {
+  margin-top: 12rem;
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 62.5%;
+  }
+}

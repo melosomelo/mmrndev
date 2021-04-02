@@ -1,0 +1,16 @@
+// variables
+$black: #090808;
+$red: #eb2145;
+$white: #ffffff;
+
+//
+
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}

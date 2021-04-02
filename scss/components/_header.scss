@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-logo {
+  display: none;
+}
+
+#sidedrawer-hamburger {
+  width: 30px;
+}
+
+nav {
+  display: none;
+}
+
+.square {
+  width: 6px;
+  height: 6px;
+
+  background-color: white;
+
+  margin: 0 1.5rem;
+}
+
+@media (min-width: 800px) {
+  #sidedrawer-hamburger {
+    display: none;
+  }
+
+  #header-logo {
+    display: initial;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .square {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .square {
+    margin: 0 3rem;
+  }
+}
