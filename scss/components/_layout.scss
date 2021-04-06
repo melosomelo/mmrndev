@@ -13,18 +13,18 @@
 #terminal-icon {
   cursor: pointer;
   position: fixed;
-  bottom: 10%;
+  bottom: 5%;
   left: 5%;
 
   display: none;
 }
 
 .gif-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
-  position: fixed;
+  position: sticky;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -36,30 +36,14 @@
   width: 100%;
 }
 
-@media (min-width: 500px) {
-  .gif-container {
-    @include animation-position(250);
-  }
-}
-
-@media (min-width: 700px) {
-  #main-wrapper {
-    padding: 7rem 0;
-  }
-
-  .gif-container {
-    width: 300px;
-    @include animation-position(300);
-  }
-}
-
 @media (min-width: 1280px) {
   #terminal-icon {
     display: initial;
   }
 
   .gif-container {
-    width: 350px;
-    @include animation-position(350);
+    width: 275px;
+    display: flex;
+    @include animation-position(300);
   }
 }

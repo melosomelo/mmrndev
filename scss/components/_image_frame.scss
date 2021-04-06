@@ -1,0 +1,63 @@
+$basic-unit: 4;
+$vertical-positions: top, bottom;
+$horizontal-positions: left, right;
+
+.image-frame {
+  position: relative;
+  padding: #{$basic-unit * 2}px;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .frame-rectangle {
+    background-color: #eb2145;
+    position: absolute;
+  }
+
+  .frame-rectangle.top,
+  .frame-rectangle.bottom {
+    width: calc(100% - #{$basic-unit * 4}px);
+    height: #{$basic-unit}px;
+  }
+
+  .frame-rectangle.right,
+  .frame-rectangle.left {
+    width: #{$basic-unit}px;
+    height: calc(100% - #{$basic-unit * 5}px);
+  }
+
+  .frame-rectangle.left {
+    left: 4px;
+  }
+
+  .frame-rectangle.right {
+    right: 4px;
+  }
+
+  .frame-rectangle.top {
+    top: 4px;
+  }
+
+  .frame-rectangle.bottom {
+    bottom: 8px;
+  }
+
+  .frame-square {
+    width: #{$basic-unit}px;
+    height: #{$basic-unit}px;
+    background-color: #eb2145;
+
+    position: absolute;
+  }
+
+  @each $hd in $horizontal-positions {
+    @each $vd in $vertical-positions {
+      .frame-square.#{$vd}-#{$hd} {
+        #{$hd}: 0;
+        #{$vd}: 0;
+      }
+    }
+  }
+}

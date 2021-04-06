@@ -19,11 +19,11 @@ const Header: React.FC = () => {
           <a>home</a>
         </Link>
         <Square />
-        <Link href="/">
+        <Link href="/about">
           <a>about me</a>
         </Link>
         <Square />
-        <Link href="/">
+        <Link href="/portfolio">
           <a>portfolio</a>
         </Link>
         <Square />

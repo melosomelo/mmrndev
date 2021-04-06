@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+main.about {
+  max-width: 1000px;
+}
+
+main.about > section {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+main.about > section.active {
+  margin-bottom: 5rem;
+  animation: fadeFromRight 0.5s ease-in;
+  animation-fill-mode: forwards;
+}

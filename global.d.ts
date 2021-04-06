@@ -3,3 +3,9 @@ interface TypingAnimationData {
   currentStr: string;
   currentIndex: number;
 }
+
+interface SkillNode {
+  color?: string;
+  major: boolean;
+  value: string;
+}

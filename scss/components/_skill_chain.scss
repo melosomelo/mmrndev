@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.chain-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 3rem;
+}
+
+.connector,
+.skill-node {
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: fadeFromRight 0.3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.connector {
+  display: none;
+  align-self: center;
+}
+
+.skill-node {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.skill-node.major {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.skill-node.minor {
+  font-size: 2rem;
+}
+
+.chain-container > :not(.chain-container:last-child) {
+  margin-right: 3rem;
+}
+
+@media (min-width: 800px) {
+  .connector {
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: red;
+  }
+  .chain-container > :not(.chain-container:last-child) {
+    margin-right: 0;
+  }
+
+  .skill-node {
+    margin-bottom: 0;
+  }
+}
