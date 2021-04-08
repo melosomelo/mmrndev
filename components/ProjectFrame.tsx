@@ -1,13 +1,17 @@
+import { Style } from "util";
+
 interface Props {
   project: Project;
   onClick: () => void;
   selected: boolean;
+  style?: React.CSSProperties;
 }
 
 const ProjectFrame: React.FC<Props> = ({
   project: { logo, title },
   onClick,
   selected,
+  style,
 }) => {
   console.log(logo);
   return (
@@ -15,6 +19,7 @@ const ProjectFrame: React.FC<Props> = ({
       className={`project-frame ${selected ? "selected" : ""}`}
       title={title}
       onClick={onClick}
+      style={style}
     >
       <img
         src={logo}

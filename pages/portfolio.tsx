@@ -40,8 +40,9 @@ const Portfolio: React.FC = () => {
           <div className="projects-row">
             {projects
               .filter((project) => project.type === "commercial")
-              .map((project) => (
+              .map((project, index) => (
                 <ProjectFrame
+                  style={{ animationDelay: `${index * 0.3}s` }}
                   project={project}
                   onClick={() => setSelectedProject(project)}
                   selected={selectedProject.title === project.title}
@@ -54,8 +55,9 @@ const Portfolio: React.FC = () => {
           <div className="projects-row">
             {projects
               .filter((project) => project.type === "personal")
-              .map((project) => (
+              .map((project, index) => (
                 <ProjectFrame
+                  style={{ animationDelay: `${index * 0.3}s` }}
                   project={project}
                   onClick={() => setSelectedProject(project)}
                   selected={selectedProject.title === project.title}

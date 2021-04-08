@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 main.portfolio {
   max-width: 1000px;
 }
@@ -20,6 +22,11 @@ main.portfolio {
 
   & > .project-frame {
     margin-right: 2.3rem;
+    animation: fadeFromRight 0.5s ease-out;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+    transform: translateX(-10px);
   }
 }
 
