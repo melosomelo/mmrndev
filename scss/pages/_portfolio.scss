@@ -1,0 +1,85 @@
+main.portfolio {
+  max-width: 1000px;
+}
+
+.projects-row {
+  display: flex;
+  align-items: center;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  margin-bottom: 3rem;
+
+  /* don't show scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: 0px;
+
+  & > .project-frame {
+    margin-right: 2.3rem;
+  }
+}
+
+.selected-project {
+  margin-bottom: 3rem;
+}
+
+.selected-project-techs {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .tech-card {
+    margin-right: 1.5rem;
+  }
+}
+
+.selected-project-about {
+  & > h4 > a {
+    font-weight: bold;
+    color: #eb2145;
+  }
+  & > h4 {
+    text-decoration: underline;
+
+    margin-bottom: 1.5rem;
+  }
+
+  & > p {
+    font-size: 1.8rem;
+  }
+}
+
+#selected-project-screenshot {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+  max-width: 600px;
+
+  & > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .selected-project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .selected-project-about {
+    width: calc(100% - 500px);
+  }
+  #selected-project-screenshot {
+    width: 500px;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: 1.5rem;
+  }
+}

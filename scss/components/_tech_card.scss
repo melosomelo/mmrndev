@@ -1,0 +1,16 @@
+.tech-card {
+  font-size: 1.5rem;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  & > img {
+    margin-right: 8px;
+    width: 21px;
+    height: 21px;
+  }
+}

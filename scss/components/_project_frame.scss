@@ -1,0 +1,59 @@
+.project-frame {
+  cursor: pointer;
+
+  background-color: #212121;
+
+  border: 2px solid white;
+
+  min-height: 85px !important;
+  height: 85px;
+  min-width: 152px;
+  width: 152px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: border 0.2s ease-out;
+
+  & > img {
+    margin: 0.5rem 1.5rem;
+  }
+
+  &:hover,
+  &.selected {
+    border-color: #eb2145;
+  }
+}
+
+#mmrn-dev {
+  width: 50px;
+}
+
+#mooviz {
+  width: 100px;
+}
+
+#github-filtering {
+  width: 125px;
+}
+
+#socket {
+  width: 60px;
+}
+
+#pokemon-api {
+  width: 40px;
+}
+
+#mindfit {
+  width: 65px;
+}
+
+#arts {
+  width: 120px;
+}
+
+#misslight {
+  width: 120px;
+}

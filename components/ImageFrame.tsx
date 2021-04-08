@@ -1,6 +1,6 @@
-const ImageFrame: React.FC = ({ children }) => {
+const ImageFrame: React.FC = ({ children, ...props }) => {
   return (
-    <div className="image-frame">
+    <div className="image-frame" {...props}>
       <div className="frame-rectangle top" />
       <div className="frame-rectangle left" />
       <div className="frame-rectangle right" />
