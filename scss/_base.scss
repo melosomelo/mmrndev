@@ -97,6 +97,30 @@ main > h1 {
   margin-bottom: 4rem;
 }
 
+input,
+textarea {
+  font-family: "JetBrains Mono";
+  font-size: 1.8rem;
+  color: white;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+input {
+  border-bottom: 3px solid #858080;
+  padding: 0.75rem 1rem;
+
+  position: relative;
+}
+
+textarea {
+  border: 3px solid #858080;
+  padding: 0.75rem 1rem;
+}
+
 @media (min-width: 720px) {
   html {
     font-size: 56.25%;

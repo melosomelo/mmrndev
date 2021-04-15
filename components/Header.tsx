@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           <a>other projects</a>
         </Link>
         <Square />
-        <Link href="/">
+        <Link href="/contact">
           <a>contact</a>
         </Link>
       </nav>
