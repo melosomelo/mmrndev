@@ -1,0 +1,121 @@
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+main.terminal {
+  overflow: auto;
+  margin-bottom: 100rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: 0px;
+}
+
+.current-directory {
+  font-size: 3rem;
+  font-weight: bold;
+
+  background-color: #eb2145;
+  width: auto;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.cursor {
+  width: 10px;
+  min-height: 30px;
+
+  background-color: white;
+
+  margin-left: 5px;
+}
+
+#terminal-input {
+  opacity: 0;
+
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.line.main {
+  & > form {
+    min-height: 30px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > form > .value {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    // hide scrollbar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: 0px;
+  }
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.status-bar {
+  display: flex;
+  margin-left: auto;
+
+  & > .time {
+    background-color: #949292;
+
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  & > .status {
+    width: 30px;
+    background-color: #949292;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.ok {
+      background-color: #2edc3f;
+    }
+
+    &.error {
+      background-color: #e02929;
+    }
+
+    & > img {
+      width: 15px;
+    }
+  }
+}
+
+.cursor.blink {
+  animation: blink 0.8s linear infinite;
+}

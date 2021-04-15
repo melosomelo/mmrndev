@@ -32,3 +32,20 @@ interface Project {
   type: "personal" | "commercial";
   screenshot?: string;
 }
+
+interface TerminalLine {
+  currentDirectory: string;
+  status: "ok" | "error";
+  inputValue: string;
+  date: Date;
+}
+
+type Directory = "~" | "about" | "portfolio" | "projects" | "contact";
+
+interface Command {
+  directive: string;
+  possibleOptions: string[];
+  possibleArguments: string[];
+  requiredArguments: string[];
+  requiredArgumentsOrder: string[];
+}

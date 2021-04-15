@@ -1,0 +1,53 @@
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes traverse {
+  from {
+    right: 0;
+    bottom: 0;
+  }
+
+  to {
+    right: 100%;
+    bottom: 100%;
+  }
+}
+
+main.not-found {
+  min-height: 100vh;
+
+  & > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    & > h1 {
+      font-size: 8rem;
+      margin-bottom: 3rem;
+    }
+
+    & > p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+#sure {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  animation: traverse 5s linear, spin 2.5s linear infinite;
+  animation-fill-mode: forwards;
+  transform: translate(100%, 100%);
+}

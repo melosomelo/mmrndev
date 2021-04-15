@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           <a>portfolio</a>
         </Link>
         <Square />
-        <Link href="/">
+        <Link href="/projects">
           <a>other projects</a>
         </Link>
         <Square />

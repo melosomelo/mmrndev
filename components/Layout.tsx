@@ -3,19 +3,22 @@ import Header from "./Header";
 import { Context as ModeContext } from "../Context/ModeContext";
 
 const Layout: React.FC = ({ children }) => {
-  const { mode } = useContext(ModeContext);
+  const { mode, setMode } = useContext(ModeContext);
   return (
     <div id="main-wrapper">
       {mode === "normal" && <Header />}
       {children}
+      {/*}
       {mode === "normal" && (
         <img
           src="/images/terminal-icon.svg"
           alt="An icon representing a terminal"
           id="terminal-icon"
           title="Wanna try terminal mode?"
+          onClick={() => setMode("terminal")}
         />
       )}
+      {*/}
       {mode === "normal" && (
         <div className="gif-container" title="This is me most of the time">
           <img

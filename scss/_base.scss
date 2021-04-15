@@ -25,6 +25,17 @@ body {
   color: $white;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+body,
+input,
+button {
+  font-family: "JetBrains Mono", monospace;
+  color: $white;
+}
+
 .red-gradient-container {
   background: linear-gradient(
     287.06deg,
