@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <title>Mateus Nascimento</title>
         <meta name="description" content="Brazilian web developer" />
         <meta name="author" content="Mateus Nascimento" />
+        <meta name="keywords" content="Web, developer, brazilian" />
         <meta
           name="robots"
           content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://mmrn.dev"></meta>
-        <meta property="og:image" content="/images/red-logo.svg"></meta>
+        <meta property="og:image" content="/images/logo.png"></meta>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
