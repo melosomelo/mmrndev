@@ -17,6 +17,12 @@ still prefer styled-components for React.
 
 Some screenshots of the website :)
 
+[![Screenshot-from-2021-04-29-15-12-50.png](https://i.postimg.cc/d1jqgL3y/Screenshot-from-2021-04-29-15-12-50.png)](https://postimg.cc/ZB0tdYrb)
+
+[![Screenshot-from-2021-04-29-15-13-00.png](https://i.postimg.cc/v8XYzgpR/Screenshot-from-2021-04-29-15-13-00.png)](https://postimg.cc/JtDC7nrK)
+
+[![Screenshot-from-2021-04-29-15-13-06.png](https://i.postimg.cc/0jt92Fp5/Screenshot-from-2021-04-29-15-13-06.png)](https://postimg.cc/YLm5dXnT)
+
 ## Checklist
 
 Things I still want to do with this website:
