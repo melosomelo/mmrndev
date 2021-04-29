@@ -26,6 +26,14 @@ const Layout: React.FC = ({ children }) => {
             alt="A gif of me programming."
             id="gif"
           />
+          {/*}
+          <div className="speech-bubble">
+            <p>
+              This is me. My name is Mateus, I'll be going through this website
+              with you.
+            </p>
+          </div>
+      {*/}
         </div>
       )}
     </div>

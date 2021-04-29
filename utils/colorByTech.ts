@@ -13,6 +13,8 @@ const colorByTech: colorByTech = {
   "styled-components": "#DB7093",
   Prismic: "#5163BA",
   Netlify: "#00C7B7",
+  Ethereum: "#3c3c3d",
+  Solidity: "#363636",
 };
 
 export default colorByTech;

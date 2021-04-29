@@ -36,6 +36,33 @@
   width: 100%;
 }
 
+.speech-bubble {
+  overflow-y: auto;
+  padding: 1.7rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 250px;
+  height: 148px;
+
+  background-image: url("/images/speech.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translate(-150px, -110px);
+
+  & > p {
+    font-size: 1.4rem;
+
+    word-break: normal;
+
+    max-height: 65px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
 @media (min-width: 1280px) {
   #terminal-icon {
     display: initial;

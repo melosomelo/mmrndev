@@ -9,7 +9,9 @@ type Tech =
   | "NodeJS"
   | "Redux"
   | "Netlify"
-  | "Prismic";
+  | "Prismic"
+  | "Ethereum"
+  | "Solidity";
 
 interface TypingAnimationData {
   finalStr: string;

@@ -49,12 +49,14 @@ export default function Contact() {
         />
       </div>
 
+      {/*}
       <form className="contact-form">
         <div className="input-wrapper">
           <input
             value={name}
             placeholder="your name"
             onChange={(e) => setName(e.target.value)}
+            autoFocus
           />
         </div>
         <div className="input-wrapper">
@@ -73,6 +75,7 @@ export default function Contact() {
           Send
         </Button>
       </form>
+  {*/}
     </main>
   );
 }

@@ -12,7 +12,7 @@ const projects: Project[] = [
   {
     title: "mooviz",
     description: `I built this website in order to learn the fundamental concepts of Redux. It was fun, but it's unfinished.`,
-    url: "https://mmrn.dev",
+    url: "#",
     techs: ["React", "Javascript", "Redux", "styled-components"],
     logo: "/images/projects/mooviz.svg",
     type: "personal",
@@ -23,7 +23,7 @@ const projects: Project[] = [
     description: `I remember liking this project so much! 
     It was my first project consuming an API and also using a third-party chart lib. 
     I used it to consume the github API and show some user and repo stats.`,
-    url: "https://mmrn.dev",
+    url: "#",
     techs: ["Javascript", "React", "styled-components"],
     logo: "/images/projects/github-filtering.svg",
     type: "personal",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     description: `I built this project in order to get more familiar with Typescript and Websockets. 
       It's a browser multiplayer ping-pong game.
        It's not really performatic, since my goal was to learn some concepts and not to make game.`,
-    url: "https://mmrn.dev",
+    url: "https://github.com/melosomelo/socket-game",
     techs: ["Typescript", "React", "styled-components"],
     logo: "/images/projects/socket.svg",
     type: "personal",
@@ -44,7 +44,7 @@ const projects: Project[] = [
     title: "pokemon api",
     description: `A pretty simple project. I made it when applying for a position at local company. 
       It consumes the Pokemonn API and shows some infos on the screen.`,
-    url: "https://mmrn.dev",
+    url: "https://github.com/melosomelo/pokeapi",
     techs: ["React", "Javascript", "styled-components"],
     logo: "/images/projects/pokemon.png",
     type: "personal",
@@ -55,7 +55,7 @@ const projects: Project[] = [
     description: `My first freelance gig. It's a website for a local fitness program. 
     Looking back, there are A LOT of thing that I could have done better - 
     especially not using only React for a landing page.`,
-    url: "https://mmrn.dev",
+    url: "https://somosmindfit.com.br/",
     techs: ["Javascript", "React", "styled-components", "Netlify"],
     logo: "/images/projects/mindfit.png",
     type: "commercial",
@@ -78,11 +78,23 @@ const projects: Project[] = [
     description: `I built this website for a local bakery. I'm not really proud of it.
     Looking back, I don't like the design and I didn't handle the image loading very well. 
     And again, using only React for landing pages.`,
-    url: "https://mmrn.dev",
+    url: "https://misslight.com.br/",
     techs: ["React", "Javascript", "styled-components", "Netlify"],
     logo: "/images/projects/misslight.png",
     type: "commercial",
     screenshot: "/images/screenshots/misslight.png",
+  },
+  {
+    title: "doscars",
+    description: `I just finished this project. It was made for a college course that I took. In it, we had to build
+      a Dapp using the Ethereum blockchain and Solidity. It was great. I really tried to create a good layout with awesome animations.
+      I think that I did that.
+    `,
+    url: "https://github.com/melosomelo/doscars",
+    techs: ["React", "Typescript", "Ethereum", "Solidity"],
+    logo: "/images/projects/doscars.svg",
+    type: "personal",
+    screenshot: "/images/screenshots/doscars.png",
   },
 ];
 

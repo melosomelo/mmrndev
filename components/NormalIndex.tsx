@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import sleep from "../utils/sleep";
+import Link from "next/link";
 
 export default function Home() {
   const [im, setIm] = useState<TypingAnimationData>({
@@ -96,7 +97,9 @@ export default function Home() {
         </h1>
 
         <p>I create elegant and creative solutions for your problems.</p>
-        <button>Let's chat</button>
+        <Link href="/contact">
+          <button>Let's chat</button>
+        </Link>
       </div>
       <img src="images/red-logo.svg" alt="My logo but in red." />
     </main>
