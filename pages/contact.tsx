@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import Button from "../components/Button";
 
 interface Props {
   imgSrc: string;
