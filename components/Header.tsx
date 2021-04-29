@@ -4,7 +4,11 @@ const Square: React.FC = () => {
   return <div className="square" />;
 };
 
-const Header: React.FC = () => {
+interface Props {
+  openSidedrawer: () => void;
+}
+
+const Header: React.FC<Props> = ({ openSidedrawer }) => {
   return (
     <header>
       <img src="/images/white-logo.svg" alt="My white logo" id="header-logo" />
@@ -12,6 +16,7 @@ const Header: React.FC = () => {
         src="/images/hamburger.svg"
         alt="An hamburger icon for opening a sidedrawer"
         id="sidedrawer-hamburger"
+        onClick={openSidedrawer}
       />
 
       <nav>
