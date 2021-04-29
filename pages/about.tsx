@@ -41,14 +41,14 @@ const About: React.FC = () => {
     const observer = new IntersectionObserver(
       (entries, obsv) => {
         entries.forEach((entry) => {
-          if (entry.intersectionRatio > 0.5) {
+          if (entry.intersectionRatio > 0.2) {
             entry.target.classList.add("active");
           }
         });
       },
       {
         root: null,
-        threshold: 0.5,
+        threshold: 0.3,
       }
     );
 
