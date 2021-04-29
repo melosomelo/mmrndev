@@ -22,7 +22,8 @@ main.index {
     margin-right: auto;
   }
 
-  height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 .introduction {
