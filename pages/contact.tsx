@@ -30,8 +30,8 @@ export default function Contact() {
     <main className="contact">
       <h1>contact</h1>
       <p>
-        It's super easy to reach me. Just contact me on one of these links below
-        or fill out this form. I'll answer you in no time :)
+        It's super easy to reach me. Just contact me on one of these links
+        below. I'll answer you in no time :)
       </p>
 
       <div className="link-container">
