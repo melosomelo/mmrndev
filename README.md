@@ -16,3 +16,12 @@ still prefer styled-components for React.
 ## Screens
 
 Some screenshots of the website :)
+
+## Checklist
+
+Things I still want to do with this website:
+
+- [x] Create base functionalities for the website
+- [ ] Implement a _terminal mode_
+- [ ] Make the gif react to user interactions on the webpage with speech
+      balloons.
