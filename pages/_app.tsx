@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://mmrn.dev"></meta>
-        <meta property="og:image" content="/images/logo.png"></meta>
+        <meta property="og:image" content="/logo.png"></meta>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
