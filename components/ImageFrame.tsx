@@ -1,4 +1,8 @@
-const ImageFrame: React.FC = ({ children, ...props }) => {
+interface Props {
+  id?: string;
+}
+
+const ImageFrame: React.FC<Props> = ({ children, ...props }) => {
   return (
     <div className="image-frame" {...props}>
       <div className="frame-rectangle top" />

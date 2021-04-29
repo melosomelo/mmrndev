@@ -88,7 +88,7 @@ const projects: Project[] = [
     title: "doscars",
     description: `I just finished this project. It was made for a college course that I took. In it, we had to build
       a Dapp using the Ethereum blockchain and Solidity. It was great. I really tried to create a good layout with awesome animations.
-      I think that I did that.
+      I think I did that.
     `,
     url: "https://github.com/melosomelo/doscars",
     techs: ["React", "Typescript", "Ethereum", "Solidity"],
